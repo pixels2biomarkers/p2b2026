@@ -7,9 +7,18 @@
 #   name        : full name (with title, e.g. "Prof." / "Dr.")
 #   affiliation : institution / company
 #   talk        : talk title (or a one-line topic description)
-#   url         : personal / lab homepage (optional)
-#   photo       : path to a headshot inside assets/img/speakers/ (optional)
+#   bio         : short biography shown on the card (optional)
+#   url         : personal / lab homepage (optional — the name becomes a link)
+#   photo       : path to a headshot inside assets/img/people/ (optional)
 #   confirmed   : true / false
+
+- name: "Hanwen Xu"
+  affiliation: "University of Washington"
+  talk: "Keynote — title to be announced"
+  bio: "Hanwen Xu is a Ph.D. student in the Paul G. Allen School of Computer Science & Engineering at the University of Washington, advised by Prof. Sheng Wang. His research builds gigascale multimodal foundation models for precision medicine that integrate pathology, radiology, and clinical records. He is a co-lead author of Prov-GigaPath (Nature, 2024), a whole-slide pathology foundation model downloaded more than two million times and deployed in clinical digital pathology, and has contributed to GigaTIME (Cell, 2025), LLaVA-Rad, and BiomedCLIP."
+  url: "https://hanwenxuthu.github.io/"
+  photo: "/assets/img/people/hanwen-xu.jpg"
+  confirmed: true
 
 - name: "Prof. Guanghua Xiao"
   affiliation: "UT Southwestern Medical Center"

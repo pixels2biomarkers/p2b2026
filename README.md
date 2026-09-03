@@ -30,12 +30,6 @@ Adding a headshot: put the image in `assets/img/people/` (square, ≥ 300×300 p
 Quick edits can be made directly on GitHub: open the file, click the pencil icon,
 edit, and *Commit changes*. The live site updates automatically.
 
-## One thing still marked TODO
-
-**Workshop-specific submission link** — `submission_url` in `_config.yml`. It currently
-points at the general IEEE BigData 2026 Cyberchair site; replace it with the workshop's own
-Cyberchair URL once the conference assigns it.
-
 ## Previewing locally (optional)
 
 Requires Ruby ≥ 3.0.

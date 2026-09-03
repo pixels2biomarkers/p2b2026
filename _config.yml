@@ -40,9 +40,8 @@ event:
 hero_animation: "live"
 
 # --- Submission -------------------------------------------------------------
-# TODO: replace with the workshop-specific Cyberchair link once the conference
-# assigns it (it will look like .../scripts/submit.php?subarea=S##).
-submission_url: "https://wi-lab.com/cyberchair/2026/bigdata26/"
+# Workshop-specific Cyberchair submission page (our workshop is subarea S21)
+submission_url: "https://wi-lab.com/cyberchair/2026/bigdata26/scripts/ws_submit.php?subarea=S21"
 submission_system: "Cyberchair"
 paper_format_url: "https://www.ieee.org/conferences/publishing/templates.html"
 deadline_note: "All deadlines are 11:59 PM Anywhere on Earth (AoE)."

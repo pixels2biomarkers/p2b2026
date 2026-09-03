@@ -1,0 +1,40 @@
+# Program Committee (shown as a compact list in the Organizers section).
+#
+# Fields:
+#   name        : full name (add the degree here if you want it shown)
+#   role        : position / title (optional)
+#   affiliation : institution / company
+#   url         : personal homepage (optional — the name becomes a link)
+#
+# Note: Wenhao Zhang is listed as a Program Co-Chair in `chairs.yml`, so he is
+# not repeated here. Add an entry below if you would like him listed twice.
+
+- name: "Vladimir Svetnik, Ph.D."
+  role: "Distinguished Scientist"
+  affiliation: "Merck & Co., Inc."
+  url: ""
+
+- name: "Jie Zhou, Ph.D."
+  role: "Postdoctoral Associate, Biometrics Research"
+  affiliation: "Merck & Co., Inc."
+  url: ""
+
+- name: "Brian Sang, Ph.D."
+  role: "Senior Scientist, Biometrics Research"
+  affiliation: "Merck & Co., Inc."
+  url: ""
+
+- name: "Qiaohui Zhou, Ph.D."
+  role: "Senior Scientist, Biometrics Research"
+  affiliation: "Merck & Co., Inc."
+  url: ""
+
+- name: "Zhuoyu Wen, Ph.D."
+  role: "Senior Scientist"
+  affiliation: "Apellis Pharmaceuticals"
+  url: ""
+
+- name: "Hanyin Wang, Ph.D."
+  role: "Senior Scientist, Biometrics Research"
+  affiliation: "Merck & Co., Inc."
+  url: ""

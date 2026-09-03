@@ -1,0 +1,16 @@
+# Topics of interest, in the order they appear in the Call for Papers.
+# Plain text only, one topic per line.
+
+- "Computational pathology using whole-slide, region-level, and cell-level image data"
+- "Multimodal learning across pathology images, omics data, and clinical variables"
+- "Machine learning methods for integrating image, molecular, and clinical data"
+- "Predicting molecular or biomarker signals from tissue morphology"
+- "Weak supervision and learning from limited, noisy, or partially labeled biomedical data"
+- "Learning with missing modalities or incomplete multimodal datasets"
+- "Cross-modal representation learning, alignment, and fusion"
+- "Foundation models for digital pathology and multimodal biomedical analysis"
+- "Spatial modeling of tissue architecture and cell–cell interactions"
+- "Scalable training and inference for large pathology image datasets"
+- "Robust and generalizable models across cohorts, institutions, and assay platforms"
+- "Benchmarking and evaluation for multimodal biomedical machine learning"
+- "Applications in biomarker discovery, patient stratification, drug development, and translational research"

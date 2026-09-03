@@ -1,0 +1,43 @@
+# Program Co-Chairs (shown as cards in the Organizers section, in this order).
+#
+# Fields:
+#   name        : full name
+#   degree      : e.g. "Ph.D." (optional, shown after the name)
+#   role        : position / title (optional)
+#   affiliation : institution / company
+#   bio         : one or two sentences
+#   url         : personal homepage (optional — the name becomes a link)
+#   photo       : path to a headshot, e.g. "/assets/img/people/sheng-li.jpg"
+#                 (optional — initials are shown when empty)
+
+- name: "Zhongliang Zhou"
+  degree: "Ph.D."
+  role: "Senior Scientist"
+  affiliation: "Merck & Co., Inc."
+  bio: "Zhongliang Zhou is a Senior Scientist at Merck working on computational pathology, multimodal modeling, and translational AI for biomarker-related applications. His interests include scalable digital pathology analysis, multimodal data integration, and AI-enabled biomarker discovery."
+  url: ""
+  photo: ""
+
+- name: "Sheng Li"
+  degree: "Ph.D."
+  role: "Quantitative Foundation Associate Professor of Data Science"
+  affiliation: "University of Virginia"
+  bio: "Sheng Li is Quantitative Foundation Associate Professor of Data Science at the University of Virginia. His research focuses on AI, machine learning, and data-driven methods for biomedical, health, and life science applications."
+  url: ""
+  photo: ""
+
+- name: "John Kang"
+  degree: "Ph.D."
+  role: "Senior Director"
+  affiliation: "Merck & Co., Inc."
+  bio: "John Kang is Senior Director at Merck with expertise in multi-omics, bioinformatics, and biomarker analytics, including the integration of molecular profiling and imaging data for translational research."
+  url: ""
+  photo: ""
+
+- name: "Wenhao Zhang"
+  degree: ""
+  role: ""
+  affiliation: "University of Virginia"
+  bio: "Wenhao Zhang focuses on computational pathology and machine learning, with specific interests in multimodal foundation models and AI for precision medicine."
+  url: ""
+  photo: ""

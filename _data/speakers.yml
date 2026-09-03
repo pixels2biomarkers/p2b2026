@@ -1,0 +1,40 @@
+# Keynote speakers.
+#
+# Only entries with `confirmed: true` are shown on the site. While nobody is
+# confirmed, the Speakers section displays "To be announced."
+#
+# Fields:
+#   name        : full name (with title, e.g. "Prof." / "Dr.")
+#   affiliation : institution / company
+#   talk        : talk title (or a one-line topic description)
+#   url         : personal / lab homepage (optional)
+#   photo       : path to a headshot inside assets/img/speakers/ (optional)
+#   confirmed   : true / false
+
+- name: "Prof. Guanghua Xiao"
+  affiliation: "UT Southwestern Medical Center"
+  talk: "Machine learning, spatial statistics, and high-dimensional data analysis"
+  url: ""
+  photo: ""
+  confirmed: false
+
+- name: "Prof. Jeffrey Chuang"
+  affiliation: "The Jackson Laboratory for Genomic Medicine"
+  talk: "Interpretable deep learning for tissue image analysis"
+  url: ""
+  photo: ""
+  confirmed: false
+
+- name: "Prof. Andrew Janowczyk"
+  affiliation: "Emory University School of Medicine"
+  talk: "Scalable data analysis techniques to facilitate impactful cancer research through clinical collaboration"
+  url: ""
+  photo: ""
+  confirmed: false
+
+- name: "Dr. Jeong Hwan Kook"
+  affiliation: "Merck & Co., Inc."
+  talk: "Scalable multimodal learning for biomedical data"
+  url: ""
+  photo: ""
+  confirmed: false

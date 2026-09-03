@@ -1,0 +1,24 @@
+# Important dates. Rendered in the "Important Dates" section, in this order.
+#   label : what the deadline is
+#   date  : human-readable date shown on the page
+#   iso   : machine-readable date (YYYY-MM-DD); used for <time datetime="...">
+#   note  : optional small print shown under the label
+#   highlight : true  → drawn with a stronger accent (use for the main deadline)
+
+- label: "Paper submission deadline"
+  date: "October 29, 2026"
+  iso: "2026-10-29"
+  highlight: true
+
+- label: "Notification of acceptance"
+  date: "November 16, 2026"
+  iso: "2026-11-16"
+
+- label: "Camera-ready papers due"
+  date: "November 23, 2026"
+  iso: "2026-11-23"
+
+- label: "Workshop"
+  date: "December 14–17, 2026"
+  iso: "2026-12-14"
+  note: "Exact workshop day to be announced · Phoenix, AZ, USA"

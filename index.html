@@ -24,9 +24,7 @@ Where to edit what:
 <section id="about" class="section">
   <h2>About the Workshop</h2>
 
-  <p>Recent advances in digital pathology and molecular profiling have created a new type of large-scale biomedical data that combines extremely large tissue images, molecular measurements such as gene or protein signals, and associated clinical information. Analyzing these data is challenging because they come from different sources, have different formats, and are often incomplete or noisy.</p>
-
-  <p>This workshop brings together researchers from machine learning, data mining, computational pathology, bioinformatics, and industry to discuss methods for integrating image, molecular, and clinical data. Our goal is to develop scalable and interpretable approaches that better support biomarker discovery, patient stratification, and translational research.</p>
+  <p>Digital pathology and molecular profiling now produce very large tissue images together with gene, protein, and clinical data that are heterogeneous, often incomplete, and hard to integrate. This workshop brings together researchers from machine learning, data mining, computational pathology, bioinformatics, and industry to develop scalable and interpretable methods that combine image, molecular, and clinical data for biomarker discovery, patient stratification, and translational research.</p>
 
   <div class="flow" role="img" aria-label="Pixels, molecules, and clinical data are integrated to discover biomarkers">
     <div class="flow-inputs">
@@ -58,7 +56,7 @@ Where to edit what:
     </div>
   </div>
 
-  <p>The workshop is held in conjunction with the <a href="{{ site.event.conference_url }}" target="_blank" rel="noopener">{{ site.event.conference_full }} ({{ site.event.conference }})</a>, {{ site.event.dates }}, at the {{ site.event.venue }} in {{ site.event.city }}. The program will feature invited keynote talks and presentations of accepted papers.</p>
+  <p class="about-meta">Held in conjunction with the <a href="{{ site.event.conference_url }}" target="_blank" rel="noopener">{{ site.event.conference_full }} ({{ site.event.conference }})</a>, {{ site.event.dates }}, {{ site.event.venue }}, {{ site.event.city }}. The program will feature invited keynote talks and presentations of accepted papers.</p>
 </section>
 
 <!-- ===================================================================== -->
@@ -67,11 +65,9 @@ Where to edit what:
 <section id="call-for-papers" class="section">
   <h2>Call for Papers</h2>
 
-  <p>We invite submissions of original, unpublished research on big data methods for computational pathology and multi-omics. We welcome methodological contributions, systems and scalability work, benchmarks and datasets, and application papers with clear translational relevance. Accepted papers will be presented at the workshop and published in the {{ site.event.conference }} workshop proceedings.</p>
+  <h3 class="h3-first">Topics of Interest</h3>
 
-  <h3>Topics of Interest</h3>
-
-  <p>Topics of interest include, but are not limited to:</p>
+  <p>Topics include, but are not limited to:</p>
 
   <ul class="topics">
     {%- for topic in site.data.topics %}
@@ -86,9 +82,12 @@ Where to edit what:
     <li><strong>Full papers</strong> may be up to <strong>10 pages</strong> and <strong>short papers</strong> up to <strong>5 pages</strong>, including references, figures, and tables.</li>
     <li>Reviews are <strong>single-blind</strong>: please include author names and affiliations in the submission.</li>
     <li>Submissions must be original work that is not published or under review elsewhere.</li>
-    <li>Accepted papers will be published in the {{ site.event.conference }} workshop proceedings by the IEEE Computer Society Press and made available in IEEE Xplore.</li>
     <li>At least one author of each accepted paper must register for the conference and <strong>present the paper in person</strong> at the workshop in {{ site.event.city }}.</li>
   </ul>
+
+  <h3>Proceedings and Indexing</h3>
+
+  <p>All accepted workshop papers will be published by IEEE in the BigData 2026 Proceedings and will be submitted for inclusion in the IEEE Xplore Digital Library.</p>
 
   <div class="callout callout-submit">
     <div class="callout-body">

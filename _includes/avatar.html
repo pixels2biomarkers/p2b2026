@@ -2,6 +2,7 @@
 {% if p.photo and p.photo != "" %}
 <img class="person-photo" src="{{ p.photo | relative_url }}" alt="Portrait of {{ p.name }}" loading="lazy" width="72" height="72">
 {% else %}
-{% assign parts = p.name | remove: "Prof. " | remove: "Dr. " | split: " " %}
+{% assign clean = p.name | remove: ", Ph.D." | remove: " Ph.D." | remove: ", PhD" | remove: ", MD" | remove: "Prof. " | remove: "Dr. " %}
+{% assign parts = clean | strip | split: " " %}
 <span class="person-initials" aria-hidden="true">{{ parts | first | slice: 0 }}{{ parts | last | slice: 0 }}</span>
 {% endif %}

@@ -912,12 +912,27 @@ body {
 
 .committee-item {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
   margin: 0;
   padding: 0.6rem 0.9rem;
   border-left: 3px solid var(--eosin-300);
   border-radius: 0 0.5rem 0.5rem 0;
   background: var(--wash);
+
+  // smaller avatars than the co-chair cards
+  .person-photo,
+  .person-initials {
+    width: 2.9rem;
+    height: 2.9rem;
+    font-size: 0.9rem;
+  }
+}
+
+.committee-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
 .committee-name {

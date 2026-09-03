@@ -19,10 +19,12 @@ lang: en-US
 # --- Event details (shown in the header, About section, and footer) ---------
 event:
   short_name: "Pixels to Biomarkers"
-  # Edition and topic are shown separately in the header so the ordinal can be typeset as 1<sup>st</sup>
+  # The header title is typeset as "1st" + two lines (kept to two lines on desktop)
   edition: "1st"
   edition_html: "1<sup>st</sup>"
-  topic: "Big Data for Computational Pathology and Multi-Omics"
+  title_lines:
+    - "Workshop on Big Data for"
+    - "Computational Pathology and Multi-Omics"
   conference: "IEEE BigData 2026"
   conference_full: "2026 IEEE International Conference on Big Data"
   conference_url: "https://bigdataieee.org/BigData2026/"
@@ -32,10 +34,10 @@ event:
   venue: "Sheraton Phoenix Downtown"
 
 # --- Header animation --------------------------------------------------------
-# "scan"  : tissue drifts slowly and a sliding window steps across it (default)
-# "drift" : tissue drifts slowly, no sliding window
-# "none"  : static image
-hero_animation: "scan"
+# "live" : the tissue is drawn live on a canvas (assets/js/hero-tissue.js) — nuclei
+#          glide along a slow flow field, glands rotate and breathe (default)
+# "none" : the static tissue image only
+hero_animation: "live"
 
 # --- Submission -------------------------------------------------------------
 # TODO: replace with the workshop-specific Cyberchair link once the conference

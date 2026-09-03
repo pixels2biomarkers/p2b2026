@@ -52,7 +52,7 @@
         <p class="hero-kicker">
           <a href="{{ site.event.conference_url }}" target="_blank" rel="noopener">{{ site.event.conference }}</a> Workshop
         </p>
-        <h1 class="project-name"><span class="edition">{{ site.event.edition_html | default: site.event.edition }}</span> Workshop on {{ site.event.topic | default: site.title | replace: "Big Data", "Big&nbsp;Data" }}</h1>
+        <h1 class="project-name"><span class="edition">{{ site.event.edition_html | default: site.event.edition }}</span> {{ site.event.title_lines[0] | replace: "Big Data", "Big&nbsp;Data" }}<br class="title-break"> <span class="title-line">{{ site.event.title_lines[1] }}</span></h1>
         <h2 class="project-tagline">{{ site.tagline }}</h2>
         <p class="hero-meta">
           <span class="hero-meta-item">

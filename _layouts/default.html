@@ -42,13 +42,17 @@
       </div>
     </nav>
 
-    <header class="page-header" role="banner" id="top">
+    <header class="page-header{% if site.hero_animation == 'none' %} is-static{% endif %}" role="banner" id="top">
+      <div class="hero-tissue" aria-hidden="true"></div>
+      {%- if site.hero_animation == "scan" %}
+      <div class="hero-scan" aria-hidden="true"></div>
+      {%- endif %}
       <div class="hero-inner">
         <div class="hero-copy">
         <p class="hero-kicker">
           <a href="{{ site.event.conference_url }}" target="_blank" rel="noopener">{{ site.event.conference }}</a> Workshop
         </p>
-        <h1 class="project-name">{{ site.title }}</h1>
+        <h1 class="project-name"><span class="edition">{{ site.event.edition_html | default: site.event.edition }}</span> Workshop on {{ site.event.topic | default: site.title | replace: "Big Data", "Big&nbsp;Data" }}</h1>
         <h2 class="project-tagline">{{ site.tagline }}</h2>
         <p class="hero-meta">
           <span class="hero-meta-item">
@@ -119,6 +123,36 @@
             });
           }, { rootMargin: '-35% 0px -60% 0px', threshold: 0 });
           sections.forEach(function (section) { observer.observe(section); });
+        }
+
+        // Header: a sliding window steps across the tissue, like patch-based
+        // inference on a whole-slide image. Disabled for reduced-motion users.
+        var scan = document.querySelector('.hero-scan');
+        var header = document.querySelector('.page-header');
+        var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (scan && header && !reduceMotion) {
+          var SIZE = 84, GAP = 8, TOP = 20, col = 0, row = 0;
+          var copy = header.querySelector('.hero-copy');
+          function step() {
+            if (getComputedStyle(scan).display === 'none') { return; }
+            var W = header.clientWidth, H = header.clientHeight;
+            // roam only over the visible tissue, clear of the text column
+            var textRight = copy ? (copy.getBoundingClientRect().right - header.getBoundingClientRect().left) : W * 0.6;
+            var x0 = Math.round(Math.max(W * 0.62, textRight + 28));
+            var cols = Math.max(1, Math.floor((W - x0 - GAP) / (SIZE + GAP)));
+            var rows = Math.max(1, Math.floor((H - TOP - GAP) / (SIZE + GAP)));
+            col += 1;
+            if (col >= cols) { col = 0; row = (row + 1) % rows; }
+            var x = x0 + col * (SIZE + GAP), y = TOP + row * (SIZE + GAP);
+            var trail = document.createElement('span');
+            trail.className = 'hero-scan-trail';
+            trail.style.transform = scan.style.transform || ('translate(' + x + 'px,' + y + 'px)');
+            header.appendChild(trail);
+            setTimeout(function () { if (trail.parentNode) { trail.parentNode.removeChild(trail); } }, 2400);
+            scan.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+          }
+          step();
+          setInterval(step, 1100);
         }
       })();
     </script>

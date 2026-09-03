@@ -1,0 +1,148 @@
+---
+layout: default
+# Social-sharing preview image (Open Graph / Twitter card), used by jekyll-seo-tag
+image: /assets/img/og-image.jpg
+---
+{%- comment -%}
+=============================================================================
+Home page. Everything on the site lives on this one page.
+
+Where to edit what:
+  * Dates ................ _data/dates.yml
+  * Topics of interest ... _data/topics.yml
+  * Keynote speakers ..... _data/speakers.yml   (set `confirmed: true` to show)
+  * Program co-chairs .... _data/chairs.yml
+  * Program committee .... _data/committee.yml
+  * Title, venue, links, contact email ... _config.yml
+  * Prose (About, Call for Papers, Contact) ... this file
+=============================================================================
+{%- endcomment %}
+
+<!-- ===================================================================== -->
+<!-- About                                                                  -->
+<!-- ===================================================================== -->
+<section id="about" class="section">
+  <h2>About the Workshop</h2>
+
+  <p>Recent advances in digital pathology and molecular profiling have created a new type of large-scale biomedical data that combines extremely large tissue images, molecular measurements such as gene or protein signals, and associated clinical information. Analyzing these data is challenging because they come from different sources, have different formats, and are often incomplete or noisy.</p>
+
+  <p>This workshop brings together researchers from machine learning, data mining, computational pathology, bioinformatics, and industry to discuss methods for integrating image, molecular, and clinical data. Our goal is to develop scalable and interpretable approaches that better support biomarker discovery, patient stratification, and translational research.</p>
+
+  <div class="flow" role="img" aria-label="Pixels, molecules, and clinical data are integrated to discover biomarkers">
+    <div class="flow-inputs">
+      <div class="flow-step">
+        <span class="flow-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg></span>
+        <h3>Pixels</h3>
+        <p>Whole-slide, region-level, and cell-level tissue images</p>
+      </div>
+      <span class="flow-op" aria-hidden="true">+</span>
+      <div class="flow-step">
+        <span class="flow-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4.5 18.5 8.25v7.5L12 19.5 5.5 15.75v-7.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="4.5" r="2.1"/><circle cx="18.5" cy="8.25" r="2.1"/><circle cx="18.5" cy="15.75" r="2.1"/><circle cx="12" cy="19.5" r="2.1"/><circle cx="5.5" cy="15.75" r="2.1"/><circle cx="5.5" cy="8.25" r="2.1"/></svg></span>
+        <h3>Molecules</h3>
+        <p>Genomic, transcriptomic, and proteomic profiles</p>
+      </div>
+      <span class="flow-op" aria-hidden="true">+</span>
+      <div class="flow-step">
+        <span class="flow-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M5 3h14a1.5 1.5 0 0 1 1.5 1.5v16A1.5 1.5 0 0 1 19 22H5a1.5 1.5 0 0 1-1.5-1.5v-16A1.5 1.5 0 0 1 5 3zm2 4.5h10v2H7v-2zm0 4h10v2H7v-2zm0 4h6v2H7v-2z"/></svg></span>
+        <h3>Clinical data</h3>
+        <p>Outcomes, treatment, and patient-level variables</p>
+      </div>
+    </div>
+    <span class="flow-arrow" aria-hidden="true">→</span>
+    <div class="flow-step flow-result">
+      <span class="flow-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="1.8"/></svg></span>
+      <div>
+        <h3>Biomarkers</h3>
+        <p>Biomarker discovery, patient stratification, and translational research</p>
+      </div>
+    </div>
+  </div>
+
+  <p>The workshop is held in conjunction with the <a href="{{ site.event.conference_url }}" target="_blank" rel="noopener">{{ site.event.conference_full }} ({{ site.event.conference }})</a>, {{ site.event.dates }}, at the {{ site.event.venue }} in {{ site.event.city }}. The program will feature invited keynote talks and presentations of accepted papers.</p>
+</section>
+
+<!-- ===================================================================== -->
+<!-- Call for Papers                                                        -->
+<!-- ===================================================================== -->
+<section id="call-for-papers" class="section">
+  <h2>Call for Papers</h2>
+
+  <p>We invite submissions of original, unpublished research on big data methods for computational pathology and multi-omics. We welcome methodological contributions, systems and scalability work, benchmarks and datasets, and application papers with clear translational relevance. Accepted papers will be presented at the workshop and published in the {{ site.event.conference }} workshop proceedings.</p>
+
+  <h3>Topics of Interest</h3>
+
+  <p>Topics of interest include, but are not limited to:</p>
+
+  <ul class="topics">
+    {%- for topic in site.data.topics %}
+    <li>{{ topic }}</li>
+    {%- endfor %}
+  </ul>
+
+  <h3>Submission Guidelines</h3>
+
+  <ul class="guidelines">
+    <li>Papers must be submitted as a <strong>PDF in the IEEE 2-column format</strong>, following the IEEE Computer Society Proceedings Manuscript Formatting Guidelines (<a href="{{ site.paper_format_url }}" target="_blank" rel="noopener">templates</a>).</li>
+    <li><strong>Full papers</strong> may be up to <strong>10 pages</strong> and <strong>short papers</strong> up to <strong>5 pages</strong>, including references, figures, and tables.</li>
+    <li>Reviews are <strong>single-blind</strong>: please include author names and affiliations in the submission.</li>
+    <li>Submissions must be original work that is not published or under review elsewhere.</li>
+    <li>Accepted papers will be published in the {{ site.event.conference }} workshop proceedings by the IEEE Computer Society Press and made available in IEEE Xplore.</li>
+    <li>At least one author of each accepted paper must register for the conference and <strong>present the paper in person</strong> at the workshop in {{ site.event.city }}.</li>
+  </ul>
+
+  <div class="callout callout-submit">
+    <div class="callout-body">
+      <h3>Submission Site</h3>
+      <p>Papers are submitted through the {{ site.event.conference }} <strong>{{ site.submission_system }}</strong> system. Please select this workshop when you submit. Paper submissions are due <strong>{{ site.data.dates[0].date }}</strong> (11:59 PM AoE).</p>
+    </div>
+    <a class="btn btn-solid" href="{{ site.submission_url }}" target="_blank" rel="noopener">Submit a Paper ↗</a>
+  </div>
+</section>
+
+<!-- ===================================================================== -->
+<!-- Important Dates                                                        -->
+<!-- ===================================================================== -->
+<section id="important-dates" class="section">
+  <h2>Important Dates</h2>
+
+  {% include dates.html %}
+
+  <p class="fineprint">{{ site.deadline_note }}</p>
+</section>
+
+<!-- ===================================================================== -->
+<!-- Keynote Speakers                                                       -->
+<!-- ===================================================================== -->
+<section id="speakers" class="section">
+  <h2>Keynote Speakers</h2>
+
+  {% include speakers.html %}
+</section>
+
+<!-- ===================================================================== -->
+<!-- Organizers                                                             -->
+<!-- ===================================================================== -->
+<section id="organizers" class="section">
+  <h2>Organizers</h2>
+
+  <h3>Program Co-Chairs</h3>
+
+  {% include chairs.html %}
+
+  <h3>Program Committee</h3>
+
+  {% include committee.html %}
+</section>
+
+<!-- ===================================================================== -->
+<!-- Contact                                                                -->
+<!-- ===================================================================== -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+
+  {%- if site.contact_email and site.contact_email != "" %}
+  <p>For questions about the workshop, paper submissions, or participation, please contact the organizers at <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>.</p>
+  {%- else %}
+  <p>For questions about the workshop, paper submissions, or participation, please contact the workshop organizers. A dedicated workshop email address will be posted here shortly.</p>
+  {%- endif %}
+</section>

@@ -1,0 +1,58 @@
+# =============================================================================
+# Site configuration — IEEE BigData 2026 Workshop
+# "Big Data for Computational Pathology and Multi-Omics: From Pixels to Biomarkers"
+#
+# Most routine updates only need the files in `_data/` (dates, speakers,
+# organizers, committee) and the prose in `index.md`. The values below are the
+# site-wide settings that appear in the header, footer, and page metadata.
+# =============================================================================
+
+title: "Big Data for Computational Pathology and Multi-Omics"
+tagline: "From Pixels to Biomarkers"
+description: "IEEE BigData 2026 Workshop on Big Data for Computational Pathology and Multi-Omics: From Pixels to Biomarkers. December 14–17, 2026, Phoenix, AZ, USA."
+# Project site: https://pixels2biomarkers.github.io/p2b2026/
+# (`url` is the account's Pages host, `baseurl` the repository name with a leading slash)
+url: "https://pixels2biomarkers.github.io"
+baseurl: "/p2b2026"
+lang: en-US
+
+# --- Event details (shown in the header, About section, and footer) ---------
+event:
+  short_name: "Pixels to Biomarkers"
+  conference: "IEEE BigData 2026"
+  conference_full: "2026 IEEE International Conference on Big Data"
+  conference_url: "https://bigdataieee.org/BigData2026/"
+  dates: "December 14–17, 2026"
+  day_note: "Exact workshop day to be announced"
+  city: "Phoenix, AZ, USA"
+  venue: "Sheraton Phoenix Downtown"
+
+# --- Submission -------------------------------------------------------------
+# TODO: replace with the workshop-specific Cyberchair link once the conference
+# assigns it (it will look like .../scripts/submit.php?subarea=S##).
+submission_url: "https://wi-lab.com/cyberchair/2026/bigdata26/"
+submission_system: "Cyberchair"
+paper_format_url: "https://www.ieee.org/conferences/publishing/templates.html"
+deadline_note: "All deadlines are 11:59 PM Anywhere on Earth (AoE)."
+
+# --- Contact ----------------------------------------------------------------
+# Workshop mailbox shown in the Contact section (leave empty to show a
+# "coming soon" note instead).
+contact_email: "pixelsbiomarkers@gmail.com"
+
+# --- Theme & plugins (all supported natively by GitHub Pages) ---------------
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Files that should not be published
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - tools
+  - vendor
+  - node_modules
+  - .ruby-version

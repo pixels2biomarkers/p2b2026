@@ -16,7 +16,7 @@
   affiliation: "Merck & Co., Inc."
   bio: "Zhongliang Zhou is a Senior Scientist at Merck working on computational pathology, multimodal modeling, and translational AI for biomarker-related applications. His interests include scalable digital pathology analysis, multimodal data integration, and AI-enabled biomarker discovery."
   url: ""
-  photo: ""
+  photo: "/assets/img/people/zhongliang-zhou.jpg"
 
 - name: "Sheng Li"
   degree: "Ph.D."
@@ -24,7 +24,7 @@
   affiliation: "University of Virginia"
   bio: "Sheng Li is Quantitative Foundation Associate Professor of Data Science at the University of Virginia. His research focuses on AI, machine learning, and data-driven methods for biomedical, health, and life science applications."
   url: ""
-  photo: ""
+  photo: "/assets/img/people/sheng-li.jpg"
 
 - name: "John Kang"
   degree: "Ph.D."
@@ -40,4 +40,4 @@
   affiliation: "University of Virginia"
   bio: "Wenhao Zhang focuses on computational pathology and machine learning, with specific interests in multimodal foundation models and AI for precision medicine."
   url: ""
-  photo: ""
+  photo: "/assets/img/people/wenhao-zhang.jpg"

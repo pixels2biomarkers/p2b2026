@@ -5,6 +5,8 @@
 #   role        : position / title (optional)
 #   affiliation : institution / company
 #   url         : personal homepage (optional — the name becomes a link)
+#   photo       : path to a headshot, e.g. "/assets/img/people/jie-zhou.jpg"
+#                 (optional — initials are shown when empty)
 #
 # Note: Wenhao Zhang is listed as a Program Co-Chair in `chairs.yml`, so he is
 # not repeated here. Add an entry below if you would like him listed twice.
@@ -13,28 +15,34 @@
   role: "Distinguished Scientist"
   affiliation: "Merck & Co., Inc."
   url: ""
+  photo: ""
 
 - name: "Jie Zhou, Ph.D."
-  role: "Postdoctoral Associate, Biometrics Research"
+  role: "Senior Scientist, Biometrics Research"
   affiliation: "Merck & Co., Inc."
   url: ""
+  photo: "/assets/img/people/jie-zhou.jpg"
 
 - name: "Brian Sang, Ph.D."
   role: "Senior Scientist, Biometrics Research"
   affiliation: "Merck & Co., Inc."
   url: ""
+  photo: "/assets/img/people/brian-sang.jpg"
 
 - name: "Qiaohui Zhou, Ph.D."
   role: "Senior Scientist, Biometrics Research"
   affiliation: "Merck & Co., Inc."
   url: ""
+  photo: "/assets/img/people/qiaohui-zhou.jpg"
 
 - name: "Zhuoyu Wen, Ph.D."
   role: "Senior Scientist"
-  affiliation: "Apellis Pharmaceuticals"
-  url: ""
+  affiliation: "Biogen"
+  url: "https://www.linkedin.com/in/zhuoyu-wen-53a957180/"
+  photo: ""
 
 - name: "Hanyin Wang, Ph.D."
   role: "Senior Scientist, Biometrics Research"
   affiliation: "Merck & Co., Inc."
   url: ""
+  photo: "/assets/img/people/hanyin-wang.jpg"

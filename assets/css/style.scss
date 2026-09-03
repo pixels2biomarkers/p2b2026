@@ -896,6 +896,23 @@ body {
   line-height: 1.5;
 }
 
+// keynote speakers: one wide card per speaker, larger portrait, talk title as a lead line
+.people-speakers {
+  grid-template-columns: 1fr;
+
+  .person-photo,
+  .person-initials {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .person-talk {
+    margin: 0 0 0.5rem;
+    color: var(--eosin-600);
+    font-weight: 500;
+  }
+}
+
 // ---- Program committee ------------------------------------------------------
 .committee {
   display: grid;

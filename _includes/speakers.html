@@ -9,6 +9,7 @@
       <h3 class="person-name">{% if person.url and person.url != "" %}<a href="{{ person.url }}" target="_blank" rel="noopener">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}</h3>
       <p class="person-affiliation">{{ person.affiliation }}</p>
       {% if person.talk and person.talk != "" %}<p class="person-talk">{{ person.talk }}</p>{% endif %}
+      {% if person.bio and person.bio != "" %}<p class="person-bio">{{ person.bio }}</p>{% endif %}
     </div>
   </li>
 {% endif %}{% endfor %}

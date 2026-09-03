@@ -1,0 +1,12 @@
+<ul class="people people-chairs">
+{% for person in site.data.chairs %}
+  <li class="person person-card">
+    {% include avatar.html person=person %}
+    <div class="person-body">
+      <h4 class="person-name">{% if person.url and person.url != "" %}<a href="{{ person.url }}" target="_blank" rel="noopener">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% if person.degree and person.degree != "" %}<span class="person-degree">, {{ person.degree }}</span>{% endif %}</h4>
+      <p class="person-affiliation">{% if person.role and person.role != "" %}{{ person.role }}, {% endif %}{{ person.affiliation }}</p>
+      {% if person.bio and person.bio != "" %}<p class="person-bio">{{ person.bio }}</p>{% endif %}
+    </div>
+  </li>
+{% endfor %}
+</ul>

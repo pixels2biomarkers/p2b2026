@@ -1,0 +1,11 @@
+<ol class="dates" aria-label="Important dates">
+{% for item in site.data.dates %}
+  <li class="dates-item{% if item.highlight %} is-highlight{% endif %}">
+    <time class="dates-date" datetime="{{ item.iso }}">{{ item.date }}</time>
+    <div class="dates-body">
+      <span class="dates-label">{{ item.label }}</span>
+      {% if item.note and item.note != "" %}<span class="dates-note">{{ item.note }}</span>{% endif %}
+    </div>
+  </li>
+{% endfor %}
+</ol>

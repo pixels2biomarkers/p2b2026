@@ -1,0 +1,8 @@
+<ul class="committee">
+{% for person in site.data.committee %}
+  <li class="committee-item">
+    <span class="committee-name">{% if person.url and person.url != "" %}<a href="{{ person.url }}" target="_blank" rel="noopener">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}</span>
+    <span class="committee-affiliation">{% if person.role and person.role != "" %}{{ person.role }}, {% endif %}{{ person.affiliation }}</span>
+  </li>
+{% endfor %}
+</ul>

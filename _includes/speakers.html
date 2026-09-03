@@ -1,0 +1,20 @@
+{% assign confirmed_count = 0 %}
+{% for person in site.data.speakers %}{% if person.confirmed %}{% assign confirmed_count = confirmed_count | plus: 1 %}{% endif %}{% endfor %}
+{% if confirmed_count > 0 %}
+<ul class="people people-speakers">
+{% for person in site.data.speakers %}{% if person.confirmed %}
+  <li class="person person-card">
+    {% include avatar.html person=person %}
+    <div class="person-body">
+      <h3 class="person-name">{% if person.url and person.url != "" %}<a href="{{ person.url }}" target="_blank" rel="noopener">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}</h3>
+      <p class="person-affiliation">{{ person.affiliation }}</p>
+      {% if person.talk and person.talk != "" %}<p class="person-talk">{{ person.talk }}</p>{% endif %}
+    </div>
+  </li>
+{% endif %}{% endfor %}
+</ul>
+{% else %}
+<div class="callout callout-tba">
+  <p><strong>To be announced.</strong> Keynote speakers will be posted here as they are confirmed.</p>
+</div>
+{% endif %}

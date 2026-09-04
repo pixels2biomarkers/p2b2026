@@ -15,7 +15,7 @@
 - name: "Hanwen Xu"
   affiliation: "University of Washington"
   talk: "Keynote — title to be announced"
-  bio: "Hanwen Xu is a Ph.D. student in the Paul G. Allen School of Computer Science & Engineering at the University of Washington, advised by Prof. Sheng Wang. His research builds gigascale multimodal foundation models for precision medicine that integrate pathology, radiology, and clinical records. He is a co-lead author of Prov-GigaPath (Nature, 2024), a whole-slide pathology foundation model downloaded more than two million times and deployed in clinical digital pathology, and has contributed to GigaTIME (Cell, 2025), LLaVA-Rad, and BiomedCLIP."
+  bio: "Hanwen Xu is the lead author of GigaPath (Prov-GigaPath, Nature 2024), the whole-slide pathology foundation model that has been downloaded more than two million times and deployed in clinical digital pathology. His research at the University of Washington builds gigascale multimodal foundation models for precision medicine across pathology, radiology, and clinical records, including GigaTIME (Cell, 2025), LLaVA-Rad, and BiomedCLIP."
   url: "https://hanwenxuthu.github.io/"
   photo: "/assets/img/people/hanwen-xu.jpg"
   confirmed: true
